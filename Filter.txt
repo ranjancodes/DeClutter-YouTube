@@ -1,4 +1,4 @@
-! 30 May 2024 https://www.youtube.com
+! Remove comments
 www.youtube.com###secondary
 www.youtube.com###comments > .ytd-comments.style-scope
 
@@ -46,33 +46,3 @@ www.youtube.com##ytd-reel-shelf-renderer.ytd-structured-description-content-rend
 
 ! Hide shorts category on homepage and search pages
 www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
-
-!!! MOBILE !!!
-
-! Hide all videos in home feed containing the phrase "#shorts"
-www.youtube.com##ytm-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
-
-! Hide all videos in subscription feed containing the phrase "#shorts"
-m.youtube.com##ytm-item-section-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
-
-! Hide shorts button in the bottom navigation bar
-m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
-
-! Hide all videos with the shorts indicator on the thumbnail
-m.youtube.com##ytm-video-with-context-renderer:has([data-style="SHORTS"])
-
-! Hide shorts sections
-m.youtube.com##ytm-rich-section-renderer:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts( |$)/i))
-m.youtube.com##ytm-reel-shelf-renderer.item:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/(^| )Shorts( |$)/i))
-
-! Hide shorts tab on channel pages
-! Old style
-m.youtube.com##.single-column-browse-results-tabs>a:has-text(Shorts)
-! New style (2023-10)
-m.youtube.com##yt-tab-shape:has-text(/^Shorts$/)
-
-! Hide short remixes in video descriptions
-m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-attributed-string:has-text(/^Shorts remixing this video$/i))
-
-! Hide shorts category on homepage
-m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
