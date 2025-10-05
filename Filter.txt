@@ -2,6 +2,7 @@ www.youtube.com###secondary
 www.youtube.com##[title="Shorts"]
 www.youtube.com##a.ytp-next-button.ytp-button
 www.youtube.com##div.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles
+www.youtube.com##grid-shelf-view-model
 www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
 www.youtube.com##ytd-reel-shelf-renderer[modern-typography]
 www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
