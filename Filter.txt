@@ -1,19 +1,61 @@
+! ==== Main Sidebar and Secondary Elements ====
 www.youtube.com###secondary
+
+! ==== Shorts Blocking (all page sections, grid, chips, etc) ====
 www.youtube.com##[title="Shorts"]
-www.youtube.com##a.ytp-next-button.ytp-button
-www.youtube.com##div.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles
-www.youtube.com##grid-shelf-view-model
 www.youtube.com##ytd-grid-video-renderer:has([overlay-style="SHORTS"])
-www.youtube.com##ytd-reel-shelf-renderer[modern-typography]
+www.youtube.com##ytd-reel-shelf-renderer
 www.youtube.com##ytd-rich-item-renderer:has([overlay-style="SHORTS"])
 www.youtube.com##ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer
-www.youtube.com##ytd-rich-section-renderer:nth-of-type(1)
-www.youtube.com##ytd-rich-section-renderer:nth-of-type(2)
+www.youtube.com##ytd-rich-section-renderer
 www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
 www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
 www.youtube.com##yt-tab-shape:has-text(/^Shorts$/)
 www.youtube.com##ytd-grid-video-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
 www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="subscriptions"]:has(ytd-video-renderer:has([overlay-style="SHORTS"]))
 www.youtube.com##ytd-reel-shelf-renderer.ytd-structured-description-content-renderer:has-text(/^Shorts remixing this video$/i)
-www.youtube.com##ytd-rich-grid-row,#contents.ytd-rich-grid-row:style(display: contents !important)
-www.youtube.com##ytd-rich-item-renderer:has(#video-title:has-text(/(^| )#Shorts?( |$)/i))
+
+! ==== Related/"Up Next" Videos ====
+www.youtube.com###related
+www.youtube.com###playlist
+www.youtube.com###items.ytd-watch-next-secondary-results-renderer
+www.youtube.com###secondary-inner
+www.youtube.com##div#secondary
+www.youtube.com##a.ytp-next-button.ytp-button
+www.youtube.com##ytd-watch-next-secondary-results-renderer
+www.youtube.com##ytd-compact-video-renderer
+
+! ==== Infinite Loading/Scrolling (Grid Rows) ====
+www.youtube.com##ytd-rich-grid-row
+www.youtube.com##div#contents.ytd-rich-grid-row:style(display: contents !important)
+
+! ==== Endscreen & Recommendations at End of Video ====
+www.youtube.com##div.html5-endscreen
+www.youtube.com##div.html5-endscreen.ytp-player-content
+www.youtube.com##.ytp-endscreen-content
+www.youtube.com##.ytp-ce-element
+www.youtube.com##.ytp-ce-coverage
+
+! ==== Mixes / Autoplay Playlists & Button Bar Annoyances ====
+www.youtube.com##ytd-radio-renderer
+www.youtube.com##.ytp-autonav-toggle-button
+www.youtube.com##ytd-compact-radio-renderer
+
+! ==== Hide Explore, Trending, and other Side Items ====
+www.youtube.com##ytd-guide-section-renderer:has(a[href*="/feed/trending"])
+www.youtube.com##ytd-guide-entry-renderer:has(a[href="/feed/explore"])
+www.youtube.com##ytd-mini-guide-entry-renderer:has(a[href="/feed/explore"])
+
+! ==== Shorts Tab & Top Nav Chips ====
+www.youtube.com##tp-yt-paper-tab:has-text(/^Shorts$/)
+www.youtube.com##yt-chip-cloud-chip-renderer:has-text(/^Shorts$/)
+
+! ==== Notification Bell Tooltip Annoyance ====
+www.youtube.com##tp-yt-iron-dropdown.style-scope.ytd-notification-topbar-button-renderer
+
+! Hide shorts category on homepage and search pages
+www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Shorts$/i))
+
+! Hide shorts sections on search page
+www.youtube.com##.shelf-header-layout-wiz__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
+www.youtube.com##.yt-shelf-header-layout__title:has-text(/(^| )Shorts( |$)/i):upward(grid-shelf-view-model)
