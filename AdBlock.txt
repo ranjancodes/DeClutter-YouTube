@@ -1,0 +1,32 @@
+! ==== Main Sidebar and Secondary Elements ====
+www.youtube.com###secondary
+! ==== Shorts Blocking (all page sections, grid, chips, etc) ====
+www.youtube.com##[title="Shorts"]
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer
+www.youtube.com##ytd-rich-section-renderer
+! ==== Related/"Up Next" Videos ====
+www.youtube.com###related
+www.youtube.com###playlist
+www.youtube.com###items.ytd-watch-next-secondary-results-renderer
+www.youtube.com###secondary-inner
+www.youtube.com##div#secondary
+www.youtube.com##a.ytp-next-button.ytp-button
+www.youtube.com##ytd-watch-next-secondary-results-renderer
+www.youtube.com##ytd-compact-video-renderer
+! ==== Infinite Loading/Scrolling (Grid Rows) ====
+www.youtube.com##ytd-rich-grid-row
+! ==== Endscreen & Recommendations at End of Video ====
+www.youtube.com##div.html5-endscreen
+www.youtube.com##div.html5-endscreen.ytp-player-content
+www.youtube.com##.ytp-endscreen-content
+www.youtube.com##.ytp-ce-element
+www.youtube.com##.ytp-ce-coverage
+! ==== Mixes / Autoplay Playlists & Button Bar Annoyances ====
+www.youtube.com##ytd-radio-renderer
+www.youtube.com##.ytp-autonav-toggle-button
+www.youtube.com##ytd-compact-radio-renderer
+! ==== Hide Explore, Trending, and other Side Items ====
+www.youtube.com##ytd-guide-section-renderer:has(a[href*="/feed/trending"])
+www.youtube.com##ytd-guide-entry-renderer:has(a[href="/feed/explore"])
+www.youtube.com##ytd-mini-guide-entry-renderer:has(a[href="/feed/explore"])
